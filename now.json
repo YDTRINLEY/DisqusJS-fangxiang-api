@@ -2,14 +2,14 @@
     "version": 2,
     "name": "disqusjs-proxy",
     "alias": [
-        "ydtrinley.github.io"
+        "yd-cfcz.vercel.app"
     ],
     "routes": [
         {
             "src": "/(.*)",
             "headers": {
                 "cache-control": "public, max-age=21600",
-                "Access-Control-Allow-Origin":"https://ydtrinley.github.io"
+                "Access-Control-Allow-Origin":"https://yd-cfcz.vercel.app"
             },
             "dest": "https://disqus.com/api/$1"
         }
