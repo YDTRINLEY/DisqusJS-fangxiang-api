@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "name": "disqusjs-proxy",
+    "alias": [
+        "yd-cfcz.vercel.app"
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "headers": {
+                "cache-control": "public, max-age=21600"
+            },
+            "dest": "https://disqus.com/api/$1"
+        }
+    ],
+    "github": {
+        "enabled": true,
+        "autoJobCancelation": true
+    }
+}
