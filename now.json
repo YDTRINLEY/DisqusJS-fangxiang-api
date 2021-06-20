@@ -9,7 +9,7 @@
             "src": "/(.*)",
             "headers": {
                 "cache-control": "public, max-age=21600"
-                "Access-Control-Allow-Origin": "https://yd-cfcz.vercel.app"
+                "Access-Control-Allow-Origin":"https://yd-cfcz.vercel.app"
             },
             "dest": "https://disqus.com/api/$1"
         }
